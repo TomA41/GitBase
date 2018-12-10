@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta content="text/html" charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Syntaxe Markdown</title>    
+</head>
+<body>
+<xmp theme="cerulean" style="display:none;">
+
+Syntaxe Markdown
+================
+Les titres
+----------
+Il y a plusieurs façons d'écrire des titres.
+
+    Titre de niveau 1
+    =================
+
+    Titre de niveau 2
+    -----------------
+
+    # Titre de niveau 1
+
+    ## Titre de niveau 2
+
+    ### Titre de niveau 3
+Les paragraphes
+---------------
+Vous devez séparer votre texte par des lignes vides pour créer des paragraphes.  
+Pour effectuer un retour à la ligne, vous devez terminer votre phrase par deux espaces.
+
+Emphase (gras, italique…)
+-------------------------
+Pour faire de l'emphase, il vous suffit d'entourer les mots de votre choix entre des étoiles * ou des traits de soulignement _ 
+
+Voici un mot `*important*` à mon sens donc en italique  
+Voici un mot `_important_` à mon sens donc en italique  
+Voici un mot *important* à mon sens donc en italique  
+
+Voici des mots `**très importants**`, j'insiste en gras!  
+Voici des mots `__très importants__`, j'insiste en gras!  
+Voici des mots **très importants**, j'insiste en gras!
+
+Les listes
+----------
+####Les listes à puces : 
+
+    * Une puce  
+    * Une autre puce  
+    * Et une dernière !
+
+* Une puce  
+* Une autre puce  
+* Et une dernière !  
+
+Vous pouvez remplacer les étoiles par des tirets ou des signes « + », cela aura exactement le même effet !  
+Notez que vous pouvez imbriquer les listes à puces :  
+
+    * Une puce
+        * Une sous-puce
+        * Une autre sous-puce
+    * Et encore une autre puce !
+
+* Une puce
+    * Une sous-puce
+    * Une autre sous-puce
+* Et encore une autre puce !  
+
+####Les listes numérotées :  
+Pour créer une liste numérotée, c'est très intuitif : il suffit de commencer les puces par des numéros !  
+
+    1. Et de un
+    2. Et de deux
+    3. Et de trois
+
+1. Et de un
+2. Et de deux
+3. Et de trois  
+
+Les citations :
+---------------
+Les citations fonctionnent comme les réponses des e-mails : vous devez précéder les lignes citées d'un chevron  >  
+
+`> Ceci est un texte cité`
+> Ceci est un texte cité
+
+Vous pouvez imbriquer des citations et du Markdown à l'intérieur des citations !
+
+    > Une citation
+    >
+    > > Une réponse à la citation
+    > > 
+    > > Réponse qui contient une liste à puces :
+    > > 
+    > > * Puce
+    > > * Autre puce
+
+> Une citation
+>
+> > Une réponse à la citation
+> > 
+> > Réponse qui contient une liste à puces :
+> > 
+> > * Puce
+> > * Autre puce
+
+Code Source :
+-------------
+####Bloc de code : 
+
+Pour insérer un code source, il suffit de l'indenter, c'est-à-dire de le faire précéder de 4 espaces ou d'une tabulation :  
+
+    int main()
+    {
+        printf("Hello world!\n");
+        return 0;
+    }
+####Code en ligne :  
+
+Si vous voulez écrire un morceau de code au milieu d'un paragraphe, entourez-le d'accents graves comme ceci : ` (AltGr+7)  
+
+    La fonction `printf()` permet d'afficher du texte.
+
+La fonction `printf()` permet d'afficher du texte.
+
+Les Liens :  
+-----------
+Pour créer un lien, vous devez placer le texte du lien entre crochets suivis de l'URL entre parenthèses :  
+
+    La Doc Sara se trouve sur le site [SaraSearch](http://saralabs.priv.atos.fr).
+
+La Doc Sara se trouve sur le site [SaraSearch](http://saralabs.priv.atos.fr).
+
+Les images :
+------------
+Les images s'insèrent de la même façon que les liens. Vous devez simplement mettre un point d'exclamation devant les premiers crochets.  
+
+    ![Jmac](http://saralabs.priv.atos.fr/jmac.png)  
+
+![Jmac](http://saralabs.priv.atos.fr/jmac.png)  
+Le texte entre crochets est le texte alternatif de l'image (je vous invite à le renseigner à chaque fois pour ceux qui ne peuvent pas voir les images).  
+
+Barre de séparation :
+---------------------
+Pour faire une barre de séparation, il suffit de faire une ligne de tirets ou d'étoiles.  
+
+    -------------------------------
+    ****************
+-------------------------------
+****************
+Peu importe le nombre mais il faut au moins en mettre quelques uns.
+
+Tableaux :
+---------
+Pour créer des tableaux, il suffit de le mettre en forme.  
+
+    | Titre 1       |     Titre 2     |        Titre 3 |
+    | :------------ | :-------------: | -------------: |
+    | Colonne       |     Colonne     |        Colonne |
+    | Alignée à     |   Alignée au    |      Alignée à |
+    | Gauche        |     Centre      |         Droite |
+
+| Titre 1       |     Titre 2     |        Titre 3 |
+| :------------ | :-------------: | -------------: |
+| Colonne       |     Colonne     |        Colonne |
+| Alignée à     |   Alignée au    |      Alignée à |
+| Gauche        |     Centre      |         Droite |
+
+
+</xmp>
+<script src="http://strapdownjs.com/v/0.2/strapdown.js"></script>
+</body>
+</html>
